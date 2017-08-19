@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body ng-app="app" ng-controller="xmgController">
+
+<div ng-bind-html="html"></div>
+
+<script src="bower_components/angular/angular.js"></script>
+<script>
+    // 1.创建模块
+    var app = angular.module('app',[]);
+
+    // 2.创建控制器
+    app.controller('xmgController',['$scope','$sce',function ($scope,$sce) {
+        $scope.msg = 'xmg';
+        // 默认angular 认为是不安全的 不给你加载html
+
+        // $sce 是用来授权的 只有授权了才能在dom上显示
+        var html = '<h1>我是标签</h1><p>我是p</p>';
+        $scope.html = $sce.trustAsHtml(html);
+    }]);
+
+</script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<div class="home_content">
+
+    <div ui-sref="home.detail({item:value.content})" class="home_list" ng-repeat="value in dataList.posts">
+        <!--面板-->
+        <p class="tag" ng-bind="value.column.name" ng-if="value.column.name">洗洗睡</p>
+
+        <!--标题-->
+        <h3 ng-bind="value.title"></h3>
+
+        <!--第一种样式-->
+        <div class="post1" ng-if="value.display_style == 10001">
+            <p ng-bind="value.abstract"></p>
+        </div>
+        <!--<img src="https://img1.doubanio.com/view/presto/large/public/t118589.jpg" alt="">-->
+
+        <!--第二种样式-->
+        <div class="post2 clearfix" ng-if="value.display_style == 10002">
+            <p ng-bind="value.abstract"></p>
+            <img src="images/home/post_1.png" alt="">
+        </div>
+
+        <!--第三种样式-->
+        <div class="post3" ng-if="value.display_style == 10003">
+            <ul>
+                <li><img src="images/home/post_3.png" alt=""></li>
+                <li><img src="images/home/post_4.png" alt=""></li>
+                <li><img src="images/home/post_5.png" alt=""></li>
+            </ul>
+        </div>
+    </div>
+</div>

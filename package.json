@@ -1,0 +1,33 @@
+{
+  "name": "webApp",
+  "version": "1.0.0",
+  "description": "技术交流",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp-concat": "^2.6.1",
+    "gulp": "^3.9.1",
+    "gulp-less": "^3.3.2",
+    "gulp-connect": "^5.0.0",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-imagemin": "^3.3.0",
+    "gulp-open": "^2.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^3.0.0",
+    "uglify": "^0.1.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wenyanjun/webApp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wenyanjun/webApp/issues"
+  },
+  "homepage": "https://github.com/wenyanjun/webApp#readme"
+}
